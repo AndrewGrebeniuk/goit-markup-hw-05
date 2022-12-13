@@ -76,7 +76,6 @@ h3, p, section, ul, li{
 
 
 
-
 .nav-link{
     display: block;
     color: var(--main-text-color);
@@ -135,13 +134,19 @@ h3, p, section, ul, li{
     margin-right: 0px;
 }
 
-.site-nav .site-nav-item.current{
+/* .site-nav .site-nav-item.current{
+    position: relative;
+    color: var(--highlight-color);
+
+
+} */
+
+.site-nav .nav-link.current{
     position: relative;
     color: var(--highlight-color);
 
 
 }
-
 .site-nav a.current::after{
     position: absolute;
     bottom: 0;
@@ -150,6 +155,7 @@ h3, p, section, ul, li{
     content: "";
     height: 4px;
     width: 100%;
+    color: var(--highlight-color);
     background-color: var(--highlight-color);
     border-radius: 2px;
 }
@@ -178,10 +184,6 @@ h3, p, section, ul, li{
 .address-nav-item + .address-nav-item{
     margin-left: 50px;
 }
-
-
-
-
 
 
 
